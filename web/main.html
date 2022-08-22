@@ -19,7 +19,7 @@
         </div>
     </nav>
     <main>
-        <h1 class="todo-pos">Todo(5)</h1>
+        <h1 class="todo-pos" id="todoText">Todo(1)</h1>
         <div class="Container flex_box_col" id="task-container">
 
             <!-- Task-box struture -->
@@ -48,14 +48,14 @@
 
     </main>
     <div class="add_task">
-        <svg class="add-btn" onclick="create_task()" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32.4973 6.09415C17.9371 6.09415 6.09106 17.9401 6.09106 32.5004C6.09106 47.0607 17.9371 58.9067 32.4973 58.9067C47.0576 58.9067 58.9036 47.0607 58.9036 32.5004C58.9036 17.9401 47.0576 6.09415 32.4973 6.09415ZM44.6848 34.5317H34.5286V44.6879H30.4661V34.5317H20.3098V30.4692H30.4661V20.3129H34.5286V30.4692H44.6848V34.5317Z" fill="#DC2F2F"/>
-            </svg>
-        
-        <div class="new_task_input">
-            <textarea id="new_task_text" placeholder="hello world"></textarea>
+        <div class="new_task_input" style="display: none;">
+            <textarea id="new_task_text" placeholder="Insert your task here"></textarea>
         </div>
+        <svg class="add-btn" onclick="show_new_task_input()" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.4973 6.09415C17.9371 6.09415 6.09106 17.9401 6.09106 32.5004C6.09106 47.0607 17.9371 58.9067 32.4973 58.9067C47.0576 58.9067 58.9036 47.0607 58.9036 32.5004C58.9036 17.9401 47.0576 6.09415 32.4973 6.09415ZM44.6848 34.5317H34.5286V44.6879H30.4661V34.5317H20.3098V30.4692H30.4661V20.3129H34.5286V30.4692H44.6848V34.5317Z" fill="#DC2F2F"/>
+        </svg>
     </div>
+        
         
     <script type="text/javascript" src="/eel.js"></script>
     <script src="javascript/script.js"></script>

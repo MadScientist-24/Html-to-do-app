@@ -1,4 +1,9 @@
-let tasks_id = 2 
+let tasks_id = 1 
+// this function will get the time from python
+// i can't do it in js right now, but i'll figure it out
+
+
+
 
 // prototype function to check the task visualy
 const checked = (task_id) => {
@@ -58,9 +63,9 @@ const edit_task = (task_id) => {
 
 const create_task = () => {
 
-    let id = tasks_id++
-    // let time = TIME
-    let time = "12:30"
+    let id = ++tasks_id
+    let time = gettime()
+    console.log(time)
     let task = document.getElementById("new_task_text").value
 
 
@@ -69,7 +74,7 @@ const create_task = () => {
         <div class="box bg-orange" id="${id}">
         <p class="task">${task}</p>
         <textarea name="input" class="task task-text-input" style="display: none;"></textarea>
-        <p class="time">${time}</p>
+        <p class="time"></p>
         <label class="cont">
             <input type="checkbox">
             <span class="checkmark" onclick="checked(${id})"></span>
@@ -91,6 +96,15 @@ const create_task = () => {
         document.getElementById("task-container").insertAdjacentHTML('afterbegin', task_body)
     
         document.getElementById("new_task_text").value = ""
+
+        tasks_count = document.getElementsByClassName("box").length
+        document.getElementById("todoText").innerText = `Todo(${tasks_count})`
+
+        function gettime(){
+            eel.gettime()(function(time1){
+                document.getElementById(`${id}`).children[2].innerText = time1
+            })
+        }
 }
 
 document.getElementById("new_task_text").addEventListener("keypress", (e) => {
@@ -103,19 +117,23 @@ document.getElementById("new_task_text").addEventListener("keypress", (e) => {
 const delete_task = (task_id) => {
 
     document.getElementById(task_id).remove()
+    tasks_count = document.getElementsByClassName("box").length
+    document.getElementById("todoText").innerText = `Todo(${tasks_count})`
 
 
 }
 
-
-
-// this function will get the time from python
-// i can't do it in js right now, but i'll figure it out
-let TIME = ""
-function gettime(){
-    eel.gettime()(function(time1){
-        TIME = time1
-    })
+// animation for the add task input
+const show_new_task_input = () => {
+    let task_input = document.getElementsByClassName("new_task_input")[0]
+    if (task_input.style.display === "") {
+        return task_input.style.display = "none"
+    }
+    if (task_input.style.display === "none"){
+        task_input.style.display = ""
+        task_input.children[0].focus()
+    }
 }
+
 
 
