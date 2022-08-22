@@ -1,3 +1,5 @@
+/* okay today you're gonna create a sidenav, it'll be great if you inspire yourself in the Container div */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 body {
 
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -51,34 +53,12 @@ overflow-y: auto;
 
 
 
-/* flex side */
-
-
-
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-flex-direction: column;
--ms-flex-direction: column;
-flex-direction: column;
--webkit-flex-wrap: nowrap;
--ms-flex-wrap: nowrap;
-flex-wrap: nowrap;
--webkit-justify-content: flex-start;
--ms-flex-pack: start;
-justify-content: flex-start;
--webkit-align-content: flex-start;
--ms-flex-line-pack: start;
-align-content: flex-start;
--webkit-align-items: flex-start;
--ms-flex-align: start;
-align-items: flex-start;
     
 }
 
 .sidenav {
 
-    position: absolute;
+    position: fixed;
     width: 298px;
     height: 1024px;
     left: 0px;
@@ -86,7 +66,66 @@ align-items: flex-start;
     
     background: #363636;
 
+
+
 }
+
+.group {
+
+    position: relative;
+    width: 213px;
+    height: 636px;
+    left: 65px;
+    top: 230px;
+    margin: 0%;
+
+
+
+}
+
+.flex_box_col {
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+
+}
+
+.sn_group {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.g-active {
+    position: absolute;
+    width: 208px;
+    height: 50px;
+    left: 57px;
+    top: 180px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+}
+
+
 
 /* Box Data */
 
@@ -96,8 +135,19 @@ align-items: flex-start;
     min-width: 703px;
     min-height: 111px;
     margin-top: 20px;
+    left: 0px;
+    right: 0px;
 
     border-radius: 15px;
+
+
+
+}
+
+::-webkit-resizer{
+
+display: none;
+    
 
 }
 
@@ -114,11 +164,14 @@ align-items: flex-start;
 
     position: absolute;
     overflow: hidden;
+    display: flex;
+    gap: 30px 30px;
 
-    width: 510px;
-    height: 51px;
+    width: 60%;
+
     left: 22px;
     top: 16px;
+    bottom: 30%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -136,12 +189,9 @@ align-items: flex-start;
     background: none;
     outline: none;
     border: none;
-    
-
-    
+    resize: none;
 
 }
-
 
 
 .time {
@@ -151,7 +201,7 @@ align-items: flex-start;
     width: 85px;
     height: 23px;
     left: 22px;
-    top: 78px;
+    bottom: 10px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -178,25 +228,63 @@ align-items: flex-start;
 .close-icon {
 
     position: absolute;
-    left: 670px;
+    right: 10px;
     top: 9px;
     cursor: pointer;
 
   }
 
-  .add-btn {
+.add_task {
 
     position: fixed;
-width: 65px;
+    width: 80%;
+    height: 77px;
+    right: 10px;
+    top: 90%;
+    left: 400px;
 
-height: 65px;
-right: 70px;
-top: 850px;
+}
 
+.add-btn {
 
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    right: 100px;
+    bottom: 20px;
+    
 cursor: pointer;
 
   }
+
+  .new_task_input textarea {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    
+    height: 30px;
+    top: 35px;
+    left: 0px;
+    max-width: 70%;
+    right: 110px;
+
+    border: none;
+    border-bottom: 2px solid #A7A5A5;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #A7A5A5;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+
+
+}
 
 
 .pencil {
