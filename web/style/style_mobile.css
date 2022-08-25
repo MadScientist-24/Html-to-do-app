@@ -1,4 +1,12 @@
 @media only screen and (max-width: 434px) {
+    .burger-menu{
+        height: 22px;
+        left: 38px;
+        right: 369px;
+        top: 13px;
+
+    }
+
     .todo-pos {
         position: absolute;
         height: 24px;
@@ -21,10 +29,13 @@
         top: 189px;
         bottom: 316px;
         min-height: 85px;
+        max-width: none;
+
     }
 
     .box {
-        position: absolute;
+
+        /* padding: none; */
         min-height: 85px;
         left: 0px;
         right: 0px;
@@ -104,6 +115,21 @@
 
 }
 
+.cont .checkmark:after {
+
+    width: 20px;
+    height: 6px;
+    left: 3px;
+    top: 6px;
+    
+    border-width: 0px 0px 4px 4px;
+    border-style: solid;
+    border-color: #ffffff;
+    transform: rotate(-45deg);
+
+  }
+  
+
 }
 
 @media only screen and (max-height: 592px) {
@@ -112,7 +138,28 @@
         left: 35px;
         right: 35px;
         top: 119px;
-        bottom: 386px;
+        /* bottom: 386px; */
         min-height: 85px;
+    }
+
+    .todo-pos {
+        position: absolute;
+        height: 24px;
+        left: 38px;
+        right: 261px;
+        top: 72px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .burger-menu {
+        height: 22px;
+        left: 38px;
+        right: 369px;
+        top: 13px;
+
     }
 }

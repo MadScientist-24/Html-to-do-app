@@ -93,7 +93,7 @@ const create_task = () => {
         
         `
 
-        document.getElementById("task-container").insertAdjacentHTML('afterbegin', task_body)
+        document.getElementById("task-container").insertAdjacentHTML("beforeend", task_body)
     
         document.getElementById("new_task_text").value = ""
 

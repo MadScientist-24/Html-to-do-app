@@ -49,8 +49,10 @@ body {
     
     background: #363636;
 
+}
 
-
+.burger-menu {
+    display:none
 }
 
 .group {
@@ -123,22 +125,26 @@ body {
     bottom: 98px;   
     overflow-y: auto;
     min-height: 111px;
+    max-width: 703px;
 /* background: #A7A5A5; */
    
 }
 
 .box {
 
-    max-width: 703px;
-    min-height: 111px;
-    /* margin-top: 20px; */
 
-    position: absolute;
+    min-height: 111px;
+    margin-top: 20px;
+
+    position: relative;
     left: 0%;
     right: 0%;
+    /* padding: 50px; */
+    padding-right: 100%;
+    display: flex;
+
     top: 0%;
     bottom: 81.5%;
-
     border-radius: 15px;
 
 }

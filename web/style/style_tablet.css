@@ -4,6 +4,15 @@
         display: none;
     }
 
+    .burger-menu {
+        display: initial;
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 70px;
+        top: 27px;
+    }
+
     .todo-pos {
         position: absolute;
         width: 208px;
@@ -26,6 +35,7 @@
         right: 75px;
         top: 224px;
         bottom: 259px;
+        max-width: none;
 
 
     }
@@ -69,5 +79,8 @@
 
 
     }
+
+
+    
     
 }
