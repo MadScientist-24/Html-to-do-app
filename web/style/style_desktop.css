@@ -38,23 +38,6 @@ body {
 
 }
 
-.Container {
-
-    
-position: fixed;
-height: 629px;
-left: 412px;
-right: 191px;
-top: 252px;
-overflow-y: auto;
-
-
-/* background: #A7A5A5; */
-
-
-
-    
-}
 
 .sidenav {
 
@@ -127,20 +110,36 @@ overflow-y: auto;
 
 
 
-/* Box Data */
+/* Box Data and Container*/
+
+
+.Container {
+
+    
+    position: absolute;
+    left: 400px;
+    right: 180px;
+    top: 234px;
+    bottom: 98px;   
+    overflow-y: auto;
+    min-height: 111px;
+/* background: #A7A5A5; */
+   
+}
 
 .box {
 
-    position: relative;
-    min-width: 703px;
+    max-width: 703px;
     min-height: 111px;
-    margin-top: 20px;
-    left: 0px;
-    right: 0px;
+    /* margin-top: 20px; */
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 81.5%;
 
     border-radius: 15px;
-
-
 
 }
 
@@ -163,21 +162,18 @@ display: none;
 .task {
 
     position: absolute;
-    overflow: hidden;
-    display: flex;
-    gap: 30px 30px;
-
-    width: 60%;
-
-    left: 22px;
+    height: 51px;
+    left: 31.48px;
+    right: 241.83px;
     top: 16px;
-    bottom: 30%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* overflow: hidden; */
 
     color: #ffffff;
     /* text-decoration: line-through; */
@@ -238,10 +234,10 @@ display: none;
 
     position: absolute;
     height: 77px;
-    left: 412px;
+    left: 400px;
     right: 70px;
     bottom: 28px;
-    overflow: hidden;
+    
 
 }
 
@@ -306,11 +302,11 @@ display: none;
 .pencil {
 
     position: absolute;
-width: 45px;
-height: 45px;
-right: 50px;
-top: 31px;
-cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 50px;
+    top: 31px;
+    cursor: pointer;
 
 
 }

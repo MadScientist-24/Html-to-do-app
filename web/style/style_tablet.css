@@ -1,0 +1,73 @@
+@media only screen and (max-width: 1068px) {
+
+    .sidenav {
+        display: none;
+    }
+
+    .todo-pos {
+        position: absolute;
+        width: 208px;
+        height: 36px;
+        left: 70px;
+        top: 114px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        
+    }
+
+    .Container {
+
+        position: absolute;
+        left: 70px;
+        right: 75px;
+        top: 224px;
+        bottom: 259px;
+
+
+    }
+
+    .task {
+        position: absolute;
+        height: 65px;
+        left: 31px;
+        right: 189px;
+        top: 16px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .time {
+        position: absolute;
+        width: 193.18px;
+        height: 18px;
+        left: 31px;
+        bottom: 14px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .add_task {
+
+        
+        position: absolute;
+        height: 77px;
+        left: 70px;
+        right: 73px;
+        bottom: 51px;
+
+
+    }
+    
+}
