@@ -16,4 +16,4 @@ def restart():
     eel.start("main.html", mode="chrome")
     print("SERVER RUNNING")
 
-eel.start('main.html', mode='chrome')
+eel.start('main.html', mode='chrome', port=8080)
