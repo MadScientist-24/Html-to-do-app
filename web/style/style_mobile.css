@@ -132,7 +132,7 @@
 
 }
 
-@media only screen and (max-height: 592px) {
+@media only screen and (max-height: 592px) and (max-width:592px) {
     .Container {
         position: absolute;
         left: 35px;

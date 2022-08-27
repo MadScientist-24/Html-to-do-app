@@ -11,7 +11,14 @@
         height: 34px;
         left: 70px;
         top: 27px;
+        cursor: pointer;
     }
+
+    .burger-menu:active{
+        background-color:red;
+    }
+
+    
 
     .todo-pos {
         position: absolute;
@@ -35,7 +42,7 @@
         right: 75px;
         top: 224px;
         bottom: 259px;
-        max-width: none;
+        /* max-width: none; */
 
 
     }
@@ -69,18 +76,11 @@
     }
 
     .add_task {
-
-        
         position: absolute;
         height: 77px;
         left: 70px;
         right: 73px;
         bottom: 51px;
-
-
     }
-
-
-    
-    
 }
+
